@@ -1,0 +1,124 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00829C;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.background-image {
+    background-image: url(..//hill.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body > .background {
+    filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+    body > .background > .background-image {
+        height: 100%;
+    }
+
+body > div {
+    display: inline-block;
+    width: 800px;
+    margin-top: 80px;
+    margin-left: calc( (100% - 800px) / 2 );
+    position: relative;
+}
+    body > div > .left {
+        display: inline-block;
+        float: left;
+        width: 40%;
+        background-color: #423D80;
+        position: absolute;
+        top: 30px;
+        bottom: 30px;
+        color: #FFF;
+    }
+        body > div > .left > h1 {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            right: 30px;        
+        }
+        body > div > .left > footer {
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            right: 30px;        
+        }
+            footer > a {
+                color: #FFF;
+            }
+            footer > span {
+            }
+    body > div > .right {
+        display: inline-block;
+        float: right;
+        width: 60%;
+        padding: 80px;
+        background-color: #FFF;
+    }
+        body > div > .right > .x {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            color: #999;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+        body > div > .right > form {
+            display: inline-block;
+            width: 100%;
+        }
+            form > .form-row {
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+                form > .form-row > label {
+                    display: inline-block;
+                    width: 100%;
+                    color: #999;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                form > .form-row > input {
+                    display: inline-block;
+                    width: 100%;
+                    line-height: 36px;
+                    font-size: 18px;
+                    border: none;
+                    border-bottom: 2px solid #CCC;
+                    outline-color: transparent;
+                }
+
+.btn {
+    display: inline-block;
+    padding: 5px 30px;
+    color: #FFF;
+    background-color: blue;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 15px;
+}
+
